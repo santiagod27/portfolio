@@ -1,24 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
-  <!-- explicacion: lo primero que deben incluir dentro del documento html es el head, 
-    dentro de el agregaremos titulo, enlaces a hojas de estilo y fuentes entre otras cosas -->
+  
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="styles.css" />
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
-  <!-- repaso de la estructura del head -->
-  <!-- explicacion: Luego deben agregar el body -->
+
   <body class="scroll">
-    <!-- explicacion: dentro del body lo primero que deben agregar es el header y la barra de navegacion -->
+
     <header class="encabezado">
       <nav class="navegacion">
         <a class="navegacion__enlace" href="#presentacion">
@@ -37,23 +32,18 @@
         </ul>
       </nav>
     </header>
-    <!-- repaso de la estructura del header y explicacion de los enlaces -->
-
-    <!-- explicacion: A continuacion incluiremos la etiqueta main -->
-    <main class="principal">
-      <!-- explicacion: dentro de esta etiqueta agregaremos las diferentes secciones de nuestra página -->
-
-      <!-- explicacion: Comenzaremos incluyendo una vista de presentacion -->
+    
+    <main class="principal">      
       <section class="presentacion" id="presentacion">
         <div class="presentacion__contenedor_info">
           <h1 class="presentacion__titulo">Soy Desarrollador</h1>
           <p class="presentacion__parrafo">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Soy Santiago Durand, estudiante de programación Full Stack, espacializado en HTML y CCS
           </p>
           <div class="presentacion__contenedor_botones">
             <a href="#sobre-mi" class="boton" role="button">Sobre mí</a>
             <a
-              href="./assets/docs/cv.pdf"
+              href="./assets/docs/cv Santiago Durand.pdf"
               target="_blank"
               class="boton boton_oscuro"
               role="button"
@@ -62,20 +52,17 @@
           </div>
         </div>
       </section>
-      <!-- repaso de las partes de la seccion -->
 
-      <!-- explicacion: Ahora agregaremos una seccion donde nos explayaremos 
-        sobre nuestra historia personal, para ello escribiremos lo siguiente -->
       <article class="articulo sobre_mi" id="sobre-mi">
         <h2 class="articulo__titulo">Un poco sobre mi</h2>
         <div class="articulo__contenedor_descripciones">
           <section class="seccion_descripcion">
             <div class="seccion_descripcion__porta_retrato">
               <img
-                class="seccion_descripcion__imagen"
-                src="./assets/images/profile/trabajo2.jpg"
-                alt="foto trabajando en la oficina"
-                title="trabajando en la oficina"
+                class="seccion_descripcion__imagen seccion_descripcion__imagen__variante"
+                src="./assets/images/profile/Perfil Santiago Durand -44.png"
+                alt="foto de perfil"
+                title="perfil"
               />
             </div>
             <div
@@ -90,56 +77,33 @@
                 aria-label="Detalles de mi historia"
                 aria-describedby="mi_historia_titulo"
               >
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Molestiae dolorem quasi atque deserunt odio, minima saepe
-                delectus nemo praesentium sapiente labore excepturi quos
-                repellat non, officiis, ea vero commodi reiciendis.
+                Tengo 28 años y estudié Comunicación Social, acutalmente me encuentro realizando la tesis para concluir la licenciatura.
+                Sin embargo, el mundo de la programación me llamó la atención y me apasiona aprender cosas nuevas y verlas reflejadas en mis proyectos. 
               </p>
               <p
                 class="seccion_descripcion__parrafo"
                 aria-label="Detalles de mi historia"
                 aria-describedby="mi_historia_titulo"
               >
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Molestiae dolorem quasi atque deserunt odio, minima saepe
-                delectus nemo praesentium sapiente labore excepturi quos
-                repellat non, officiis, ea vero commodi reiciendis.
+                Espero poder realizar páginas web dinámicas, atractivas y claras.
               </p>
               <p
                 class="seccion_descripcion__parrafo"
                 aria-label="Detalles de mi historia"
                 aria-describedby="mi_historia_titulo"
               >
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Molestiae dolorem quasi atque deserunt odio, minima saepe
-                delectus nemo praesentium sapiente labore excepturi quos
-                repellat non, officiis, ea vero commodi reiciendis.
+                Creo que juntando mis conocimientos en ambas formaciones, puedo crear un servicio diferencial y de mucha calidad. 
               </p>
               <p
                 class="seccion_descripcion__parrafo"
                 aria-label="Detalles de mi historia"
                 aria-describedby="mi_historia_titulo"
               >
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Molestiae dolorem quasi atque deserunt odio, minima saepe
-                delectus nemo praesentium sapiente labore excepturi quos
-                repellat non, officiis, ea vero commodi reiciendis. Lorem ipsum
-                dolor sit, amet consectetur adipisicing elit. Molestiae dolorem
-                quasi atque deserunt odio, minima saepe delectus nemo
-                praesentium sapiente labore excepturi quos repellat non,
-                officiis, ea vero commodi reiciendis. Lorem ipsum dolor sit,
-                amet consectetur adipisicing elit. Molestiae dolorem quasi atque
-                deserunt odio, minima saepe delectus nemo praesentium sapiente
-                labore excepturi quos repellat non, officiis, ea vero commodi
-                reiciendis. Lorem ipsum dolor sit, amet consectetur adipisicing
-                elit. Molestiae dolorem quasi atque deserunt odio, minima saepe
-                delectus nemo praesentium sapiente labore excepturi quos
-                repellat non, officiis, ea vero commodi reiciendis.
+                ¡No tengas dudas en contactarme para desarrollar tu proyecto web!
               </p>
             </div>
           </section>
-          <!-- explicacion: seguidamente tendremos una seccion muy similar a la anterior 
-            pero cambiaremos el orden de los elementos dejando la imagen al final -->
+
           <section class="seccion_descripcion">
             <div
               class="seccion_descripcion__info scroll scroll_fino scroll_gris"
@@ -153,46 +117,29 @@
                 aria-label="Detalles de mis hobbies"
                 aria-describedby="mis_hobbies_titulo"
               >
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Molestiae dolorem quasi atque deserunt odio, minima saepe
-                delectus nemo praesentium sapiente labore excepturi quos
-                repellat non, officiis, ea vero commodi reiciendis.
+                Tengo muchos intereses, me atrae el conocimiento y el saber en general, en materias como historia, arte, política, deporte, cienca y mucho más.
               </p>
               <p
                 class="seccion_descripcion__parrafo"
                 aria-label="Detalles de mis hobbies"
                 aria-describedby="mis_hobbies_titulo"
               >
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Molestiae dolorem quasi atque deserunt odio, minima saepe
-                delectus nemo praesentium sapiente labore excepturi quos
-                repellat non, officiis, ea vero commodi reiciendis. Lorem ipsum
-                dolor sit, amet consectetur adipisicing elit. Molestiae dolorem
-                quasi atque deserunt odio, minima saepe delectus nemo
-                praesentium sapiente labore excepturi quos repellat non,
-                officiis, ea vero commodi reiciendis. Lorem ipsum dolor sit,
-                amet consectetur adipisicing elit. Molestiae dolorem quasi atque
-                deserunt odio, minima saepe delectus nemo praesentium sapiente
-                labore excepturi quos repellat non, officiis, ea vero commodi
-                reiciendis.
+              También me gusta leer y la jardineria. Como actividad física, voy al gimnasio y juego al fubtol con amigos.
               </p>
               <p
                 class="seccion_descripcion__parrafo"
                 aria-label="Detalles de mis hobbies"
                 aria-describedby="mis_hobbies_titulo"
               >
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Molestiae dolorem quasi atque deserunt odio, minima saepe
-                delectus nemo praesentium sapiente labore excepturi quos
-                repellat non, officiis, ea vero commodi reiciendis.
+                Por supuesto también me gusta ir a la cancha, y soy hincha del Negro, Chaco For Ever, y de Boca.
               </p>
             </div>
             <div class="seccion_descripcion__porta_retrato">
               <img
                 class="seccion_descripcion__image"
-                src="./assets/images/profile/trabajo3.jpg"
-                alt="foto mientras me encontraba en una reunion de trabajo"
-                title="selfie en una reunion"
+                src="./assets/images/profile/Diego Boca.jpg"
+                alt="foto de Maradona"
+                title="Maradona en Boca, uno de mis idolos"
               />
             </div>
           </section>
@@ -213,52 +160,44 @@
             <img
               class="tarjeta__imagen"
               src="./assets/images/proyectos/paisaje.jpg"
-              alt="imagen del proyecto"
-              title="proyecto 1"
+              alt="imagen de prueba"
+              title="prueba 1"
             />
             <div class="tarjeta__contenido">
-              <h3 class="tarjeta__titulo" id="titulo_proyecto_1">titulo</h3>
+              <h3 class="tarjeta__titulo" id="titulo_proyecto_1">Proyecto 1</h3>
               <span class="tarjeta__divisor"></span>
               <p
                 class="tarjeta__parrafo scroll scroll_fino"
                 aria-label="descripcion de proyecto personal"
                 aria-describedby="titulo_proyecto_1"
               >
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Inventore necessitatibus doloribus adipisci dolorum cum et
-                quisquam dicta veniam accusamus dignissimos. Placeat eligendi
-                nihil voluptates eos enim aperiam porro architecto et?
+                En esta seccion iré incluyendo todos los proyectos en los que participe. ¡Espero les gusten!
               </p>
               <a href="#" class="boton boton_oscuro" target="_blank"
                 >Ver proyecto</a
               >
             </div>
           </article>
-          <!-- explicacion: pueden agregar tantas tarjetas como deseen, para ejemplificar agregaremos seis. 
-            Podemos hacerlo simplemente copiando y pegando. Yo en mi caso en algunas tarjetas agregare un pequeño cambio a los botones  -->
           <article
             class="tarjeta"
             aria-label="presentacion de proyecto personal"
           >
             <img
               class="tarjeta__imagen"
-              src="./assets/images/proyectos/juegos.jpg"
-              alt="imagen del proyecto"
-              title="proyecto 2"
+              src="./assets/images/proyectos/caminito.png"
+              alt="imagen de prueba 2"
+              title="prueba 2"
             />
             <div class="tarjeta__contenido">
-              <h3 class="tarjeta__titulo" id="titulo_proyecto_2">titulo</h3>
+              <h3 class="tarjeta__titulo" id="titulo_proyecto_2">Proyecto 2</h3>
               <span class="tarjeta__divisor"></span>
               <p
                 class="tarjeta__parrafo scroll scroll_fino scroll_gris"
                 aria-label="descripcion de proyecto personal"
                 aria-describedby="titulo_proyecto_2"
               >
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Inventore necessitatibus doloribus adipisci dolorum cum et
-                quisquam dicta veniam accusamus dignissimos. Placeat eligendi
-                nihil voluptates eos enim aperiam porro architecto et?
-              </p>
+              En esta seccion iré incluyendo todos los proyectos en los que participe. ¡Espero les gusten!
+            </p>
               <a href="#" class="boton" target="_blank">Ver proyecto</a>
             </div>
           </article>
@@ -268,12 +207,12 @@
           >
             <img
               class="tarjeta__imagen"
-              src="./assets/images/proyectos/calendario.jpg"
-              alt="imagen del proyecto"
-              title="proyecto 3"
+              src="./assets/images/proyectos/images.png"
+              alt="imagen de prueba"
+              title="prueba 3"
             />
             <div class="tarjeta__contenido">
-              <h3 class="tarjeta__titulo" id="titulo_proyecto_3">titulo</h3>
+              <h3 class="tarjeta__titulo" id="titulo_proyecto_3">Proyecto 3</h3>
               <span class="tarjeta__divisor"></span>
               <p
                 class="tarjeta__parrafo scroll scroll_fino"
